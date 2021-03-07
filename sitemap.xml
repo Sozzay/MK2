@@ -3,15 +3,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://sozzay.com/MK2/categories/</loc>
+    <loc>https://sozzay.com/MK2/tags/all-updates/</loc>
+    <lastmod>2021-02-28T00:00:11+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sozzay.com/MK2/</loc>
+    <lastmod>2021-02-28T00:00:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/</loc>
+    <lastmod>2021-02-28T00:00:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/tags/prologue/</loc>
+    <lastmod>2021-02-28T00:00:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-11/</loc>
+    <lastmod>2021-02-28T00:00:11+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sozzay.com/MK2/tags/</loc>
+    <lastmod>2021-02-28T00:00:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-10/</loc>
+    <lastmod>2021-02-28T00:00:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-9/</loc>
+    <lastmod>2021-02-28T00:00:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-8/</loc>
+    <lastmod>2021-02-28T00:00:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-7/</loc>
+    <lastmod>2021-02-28T00:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-6/</loc>
+    <lastmod>2021-02-28T00:00:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-5/</loc>
+    <lastmod>2021-02-28T00:00:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-4/</loc>
+    <lastmod>2021-02-28T00:00:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-3/</loc>
+    <lastmod>2021-02-28T00:00:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-2/</loc>
+    <lastmod>2021-02-28T00:00:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/liveblog/prologue-1/</loc>
+    <lastmod>2021-02-28T00:00:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sozzay.com/MK2/credits/</loc>
   </url>
   
 </urlset>
