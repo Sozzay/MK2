@@ -1,0 +1,19 @@
+baseURL = "https://sozzay.com/MK2"
+languageCode = "en-us"
+title = "Danganronpa MK2"
+
+theme = "MK2Theme"
+
+[menu]
+  [[menu.main]]
+    name = "HOME"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "ARCHIVE"
+    url = "/tags"
+    weight = 2
+  [[menu.main]]
+    name = "CREDITS"
+    url = "/credits"
+    weight = 3
