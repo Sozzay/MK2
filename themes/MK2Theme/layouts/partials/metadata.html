@@ -1,0 +1,14 @@
+<div class="metadata">
+  {{ $dateTime := .Date.Format "2006-01-02" }}
+  {{ $dateFormat := .Site.Params.dateFormat | default "2 Jan 2006" }}
+  <time class="date" datetime="{{ $dateTime }}">{{ .Date.Format $dateFormat }}</time>
+  {{ with .Params.tags }}
+    &nbsp;-&nbsp;
+    <span class="tags">
+    {{ range . }}
+      {{ $href := print (absURL "tags/") (urlize .) }}
+      <a href="{{ $href }}">{{ humanize . }}</a>
+    {{ end }}
+    </span>
+  {{ end }}
+</div>

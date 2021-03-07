@@ -1,0 +1,17 @@
+<div class="pageNav">
+  <div class="left">
+    {{ with .PrevInSection}} 
+      <a href="{{ .RelPermalink }}">&lt; {{ .Title }}</a>
+    {{ end }}
+  </div>
+
+  <div class="middle">
+    <span>{{ .Date.Format "2 Jan 2006" }}</span>
+  </div>
+
+  <div class="right">
+    {{ with .NextInSection}}
+      <a href="{{ .RelPermalink }}">{{ .Title }} &gt;</a>
+    {{ end }}
+  </div>
+</div>

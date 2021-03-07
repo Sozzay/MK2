@@ -1,0 +1,548 @@
+@font-face {
+  font-family: 'Goodbye Despair';
+  src:url('/MK2/fnt/goodbye-despair/Goodbye-Despair.ttf.woff') format('woff'),
+      url('/MK2/fnt/goodbye-despair/Goodbye-Despair.ttf.svg#Goodbye-Despair') format('svg'),
+      url('/MK2/fnt/goodbye-despair/Goodbye-Despair.ttf.eot'),
+      url('/MK2/fnt/goodbye-despair/Goodbye-Despair.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: url("/MK2/img/bg_grid_transparent.png"), linear-gradient(180deg, #113353 0%, #050e17 100%), #050e17;
+  background-attachment: fixed;
+  color: white;
+  
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+
+  --link-color: #f72543;
+  --link-color-hover: #ff536d;
+
+  &.lightGrid {
+    background: url("/MK2/img/bg_grid.png"), linear-gradient(180deg, #277fd0 0%, #164570 100%), #164570;
+    background-attachment: fixed;
+
+    #headerLinks {
+    }
+  }
+}
+
+a {
+  color: var(--link-color);
+  transition: color 0.1s;
+  &:hover {
+    color: var(--link-color-hover)
+  }
+}
+img, video, iframe {
+  max-width: 100%;
+}
+#wrapper {
+  // background-color: #1b1b1b;
+  max-width: 950px;
+  width: 95%;
+  padding: 25px 0;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+#header {
+  text-align: center;
+  border-bottom: 1px solid #f72543;
+
+  #headerLinks {
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #00000070;
+
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      padding: 0 10px;
+    }
+    
+    
+    .navLink:not(:last-child)::after {
+      content: "|";
+      // font-weight: 700;
+      font-size: 24px;
+    }
+    a {
+      padding: 0 5px;
+      font-size: 1.3em;
+    }
+  }
+}
+
+#footer {
+  border-top: 1px solid #f72543;
+  padding-top: 25px;
+  text-align: center;
+
+  .copyrightNotice {
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #00000070;
+  }
+}
+.pixel {
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#listContent {
+  border-radius: 20px;
+  background-color: #00000070;
+  padding: 30px;
+
+  width: 100%;
+  max-width: 60%;
+
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .listEntry {
+    h3 {
+      margin-bottom: 5px;
+      font-size: x-large;
+    }
+    .metadata {
+      opacity: 0.8;
+      font-size: 90%;
+
+      .tags {
+        a:not(:last-child):after {
+          content: ",";
+        }
+      }
+    }
+  }
+}
+
+#content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  padding-top: 50px;
+
+  >div {
+    margin-bottom: 50px;
+  }
+}
+.topPageNav {
+  width: 100%;
+
+  h1 {
+    text-align: center;
+    font-family: "Goodbye Despair";
+    margin-bottom: 0;
+  }
+}
+.pageNav {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:first-of-type) .middle {
+    display: none;
+  }
+
+  div {
+    flex-flow: 1 0 auto;
+
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+
+    &.left {
+      text-align: left;
+      font-size: larger;
+      width: calc(50% - 65px);
+    }
+    &.middle {
+      width: 130px;
+      text-align: center;
+      font-size: larger;
+
+      font-family: "Goodbye Despair";
+    }
+    &.right {
+      text-align: right;
+      font-size: larger;
+      width: calc(50% - 65px);
+    }
+  }
+}
+
+.introText {
+  background: #000000AA;
+  border-radius: 10px;
+  padding: 25px 50px;
+
+  text-align: center;
+  
+  font-family: 'Goodbye Despair';
+  color: white;
+  font-size: 28px;
+  text-shadow: 3px 3px #000;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .hajime {
+  font-style: italic;
+  color: #9cffaf;
+  }
+  .mahiru {
+  font-style: italic;
+  color: #ff3636;
+  }
+
+}
+
+.gameImg {
+  box-shadow: 0 0 5px 0 #000;
+  max-width: 790px;
+  border-radius: 3px;
+  overflow: hidden;
+  
+  img, video, iframe {
+    border-radius: 3px;
+    display: block;
+  }
+}
+
+.terminal { 
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 3px 0 #000;
+
+  .textbar {
+    width: 100%;
+    background-color: #e6e6e6;
+    animation: monitorFade 3s linear infinite;
+    background-position: top left;
+    background-repeat: no-repeat;
+    font-weight: 900;
+    font-size: 24px;
+    position: relative;
+
+    @keyframes monitorFade {
+      0%   {background-color: #f5f5f5;}
+      50%  {background-color: #bdbdbd;}
+      100% {background-color: #f5f5f5;}
+    }
+
+    .textRow {
+      padding: 10px 20px;
+      position: relative;
+
+      * {
+        font-family: "Goodbye Despair";
+        color: black !important; 
+      }
+
+      &:not(:last-child) {
+        border-bottom: solid 2px #36363680;
+      }
+    }
+  }
+
+}
+
+.textbox { 
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 3px 0 #000;
+
+  &.night {
+    .sidebar {
+      background-color: #0198ff;
+      background-image: url("/MK2/img/dialogue_sidebar_blue.png");
+    }
+    .textbar  {
+      .topbar {
+        background: linear-gradient(225deg, 
+          #0198ff 43px,
+          #ddd9b6 43px,
+          #ddd9b6 75px,
+          #00000000 75px
+        );
+      }
+      .chara {
+        border-color: #0198ff;
+      }
+    }
+  }
+
+  &.unknown {
+    .sidebar {
+      background-color: #42f301;
+      background-image: url("/MK2/img/dialogue_sidebar_green.png");
+    }
+    .textbar  {
+      .topbar {
+        background: linear-gradient(225deg, 
+          #42f301 43px,
+          #ddd9b6 43px,
+          #ddd9b6 75px,
+          #00000000 75px
+        );
+      }
+      .chara {
+        border-color: #42f301;
+      }
+    }
+  }
+  
+  &.trial {
+    border-top-right-radius: 0;
+    .sidebar {
+      // width: 98px;
+      background-color: #f33f40;
+      // border-left: solid 2px #ddd9b6;
+      background: linear-gradient(90deg, #b70606 10%, #f33f40 90%);
+    }
+    .textbar {
+      .topbar {
+        font-family: 'Goodbye Despair';
+        color: white;
+        font-size: 22px;
+        border-right: solid 3px #ddd9b6;
+        background: linear-gradient(225deg, 
+          #000 45px,
+          #4a4a4a 45px, 
+          #4a4a4a 110px,
+          #00000000 110px
+        );
+
+        span {
+          margin: 0;
+        }
+        .chapterNum {
+          margin-left: 27px;
+          margin-right: 3px;
+        }
+      }
+      .textRow {
+        padding: 10px 15px;
+      }
+      .chara {
+        border-radius: 0;
+        border: none;
+        left: -80px;
+        top: -2px;
+        border-top: 2px solid #ddd9b7;
+        border-bottom: 2px solid #ddd9b7;
+
+        background: url("/MK2/img/dialogue_trial_black.png") red;
+
+        &::before {
+          background: url("/MK2/img/dialogue_trial_red.png") black;
+          animation: trialFade 5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+          width: 80px;
+          height: 80px;
+          content: "";
+          position: absolute;
+        }
+        img {
+          position: relative;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  @keyframes trialFade {
+    0%   {opacity: 1;}
+    50%  {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .sidebar {
+    width: 80px;
+    flex: 0 0 auto;
+    background-color: #ffe301;
+    background-image: url("/MK2/img/dialogue_sidebar_orange.png");
+    background-repeat: repeat-y;
+    background-position: right;
+
+    
+  }
+  .textbar {
+    width: 100%;
+    background-color: #000000DD;
+    background-image: url("/MK2/img/checkers.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    font-weight: 900;
+    font-size: 24px;
+    position: relative;
+    
+    .topbar {
+      height: 30px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      background: linear-gradient(225deg, 
+        #ffe301 43px,
+        #ddd9b6 43px,
+        #ddd9b6 75px,
+        #00000000 75px
+      );
+
+      font-size: 20px;
+      color: #222222;
+
+      .chapter {
+        background: linear-gradient(45deg,
+          #00000000 21px,
+          #ddd9b6 21px
+        );
+        padding-left: 35px;
+        text-align: right;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .chapterNum {
+        color: #f33f40;
+      }
+      img {
+        padding: 2px;
+        padding-right: 5px;
+        padding-left: 30px;
+      }
+
+      .bubble {
+        width: 65px;
+        &::after {
+          content: url('/MK2/img/bubble.png');
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 5px;
+        }
+      }
+    }
+
+    .textRow {
+      min-height: 90px;
+      padding: 10px 20px;
+      position: relative;
+      &:not(:last-child) {
+        border-bottom: solid 2px #36363680;
+      }
+    }
+    .chara {
+      position: absolute;
+      left: -77px;
+      background-color: #222222;
+      border: 3px solid #ffe301;
+
+      border-radius: 50%;
+      img {
+        display: block;
+        border-radius: 50%;
+      }
+      // &::after {
+      //   height: 80px;
+      //   width: 80px;
+      //   display: block;
+      //   content: "";
+      //   background-color: red;
+      //   position: absolute;
+      // }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .textbox {
+    .sidebar {
+      width: 50px;
+    }
+    .textbar {
+      font-size: 20px;
+
+      .textRow {
+        min-height: 60px;
+      }
+      .chara {
+        max-width: 50px;
+        left: -47px;
+      }
+    }
+  }
+}
+
+#shadowDrop {
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: #000;
+  opacity: 0;
+}
+.beginButton {
+  height: 400px;
+  display: flex;
+  align-items: center;
+
+  a {
+    font-family: 'Goodbye Despair';
+    font-size: 50px;
+  }
+}
+.blueText {
+  color: #66e6ff;
+}
+.greenText {
+  color: #67fb47;
+}
+.yellowText {
+  color: #ffe600;
+  text-shadow: 
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610,
+  0 0 2px #b46610;
+}
